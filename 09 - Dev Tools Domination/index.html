@@ -21,10 +21,12 @@
     console.log('hello');
 
     // Interpolated
-    console.log('Hello I am a %s string!', '💩');
+    console.log('Hello I am a %s string!', ':poop:')
+    // console.log(`Hello I am a ${var} string!`)
 
     // Styled
     // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+
 
     // warning!
     console.warn('OH NOOO');
@@ -36,18 +38,18 @@
     console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
+    // evaluates as boolean, doesn't show if first value is true
     const p = document.querySelector('p');
-
     console.assert(p.classList.contains('ouch'), 'That is wrong!');
+   
+    // console.assert(1 === 2, 'That is wrong!');
 
     // clearing
-    console.clear();
+    // console.clear();
 
     // Viewing DOM Elements
     console.log(p);
     console.dir(p);
-
-    console.clear();
 
     // Grouping together
     dogs.forEach(dog => {
@@ -56,10 +58,9 @@
       console.log(`${dog.name} is ${dog.age} years old`);
       console.log(`${dog.name} is ${dog.age * 7} dog years old`);
       console.groupEnd(`${dog.name}`);
-    });
+    })
 
     // counting
-
     console.count('Wes');
     console.count('Wes');
     console.count('Steve');
@@ -82,6 +83,7 @@
         console.log(data);
       });
 
+    // table
     console.table(dogs);
 
   </script>
