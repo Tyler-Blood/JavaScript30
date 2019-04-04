@@ -15,6 +15,7 @@ function togglePlay() {
 
 function updateButton() {
     const icon = this.pause ? '►' ? '❚ ❚';
+    //
     console.log('Update the button');
 }
 
